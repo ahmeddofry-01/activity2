@@ -16,14 +16,6 @@ import java.util.Date;
 @Setter
 @ToString
 public class Patient {
-//    public Patient(Long id ,String name,Date dateNaissance, boolean malade, Collection<RendezVous> rendezvous) {
-//        this.id = id;
-//        this.name = name;
-//        this.dateNaissance = dateNaissance;
-//        this.malade = malade;
-//        this.rendezvous = rendezvous;
-//    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -31,7 +23,7 @@ public class Patient {
     @Temporal(TemporalType.DATE)
     private Date dateNaissance;
     private boolean malade;
-    @OneToMany(mappedBy = "patient", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "patient")
     private Collection<RendezVous> rendezvous;
 
 }

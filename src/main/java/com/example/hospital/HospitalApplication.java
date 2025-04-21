@@ -1,7 +1,6 @@
 package com.example.hospital;
 
-import abdessamad.example.hospital.entities.*;
-import abdessamad.lois.hospital.entities.*;
+
 import com.example.hospital.entities.*;
 import com.example.hospital.repository.ConsultationRepository;
 import com.example.hospital.repository.MedcienRepository;

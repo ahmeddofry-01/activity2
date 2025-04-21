@@ -7,7 +7,7 @@ import lombok.*;
 import java.util.Collection;
 import java.util.Date;
 
-@Entity(name = "patients")
+@Entity
 @NoArgsConstructor
 @AllArgsConstructor
 //@Data

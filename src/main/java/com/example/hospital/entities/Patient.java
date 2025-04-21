@@ -19,7 +19,6 @@ public class Patient {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    @Temporal(TemporalType.DATE)
     private Date dateNaissance;
     private boolean malade;
     @OneToMany(mappedBy = "patient")
